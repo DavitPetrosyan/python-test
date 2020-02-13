@@ -17,4 +17,8 @@ def primetest(x):
         print(x, ' is a prime number')
 
 if __name__ == "__main__":
-    primetest(int(x))
+    try:
+        primetest(int(x))
+    except:
+        print('the input have to be int')
+
